@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home || sifTours</title>
+    
 </head>
 <style>
     body{
@@ -48,6 +49,82 @@
         
         
     }
+    .banner{
+        background-image:url(banner.jpg);
+        background_repeat:no-repeat;
+        background-size:cover;
+        background-position:center;
+        text-align:center;
+        padding:100px;
+        margin:0;
+    }
+
+    .banner_content{
+        background-color:orangered;
+        opacity:0.9;
+        padding:5px;
+    }
+
+    .banner_content span{
+        color:#fff;
+        font-size:56px;
+    }
+    .banner_content p{
+        font-size:20px;
+        color:#000;
+
+    }
+    /* styling the search feature */
+    .banner_form{
+        margin-top:-40px;
+        text-align:center;
+        padding:20px;
+        background-color:#fff;
+        border-radius :48px;
+        width:50%;
+        margin-left:25%;
+        box-shadow:2px 2px 2px 2px #afaaaa;
+        outline:#555;
+    }
+    /* arranging items in a horizontal flow */
+    .banner_form form ul{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
+        list-style-type:none;
+
+    }
+    /* input fields + button width */
+    .banner_form form ul li{
+        width:100%;
+    }
+    /* input fields styling */
+    .banner_form form ul li input{
+        outline: none;
+        border:none;
+        background-color: rgb(250,233,233);
+        height:20px;
+        padding:10px;
+
+    }
+    /* button styling */
+    .banner_form form ul li button{
+        background-color:orangered;
+        border:none;
+        outline:none;
+        color:#fff;
+        padding:10px;
+        border-radius:8px;
+    }
+
+    /* button hover effect */
+    .banner_form form ul li button:hover{
+        background-color:#000;
+        transition:3 ease in out;
+        transform:scale(0.8);
+    }
+
 </style>
 <body>
     <div class="header">
@@ -59,10 +136,41 @@
         <a href="#">About Us</a>
         <a href="#">Contact Us</a>
     </div>
+
+    <div class="banner">
+        <div class="banner_content">
+            <p><span>Plan Your Perfect Trip with sifTours</span><br> Find Beautiful places Across Africa to chill</p>
+        </div>
+
+    </div>
+    <div class="banner_form">
+        <form>
+            <ul>
+                <li>
+                    <label>Destination</label>
+                    <input type="text"placeholder="Enter Your destination">
+                
+                </li>
+                <li>
+                    <label>Check In</label>
+                    <input type="date" placeholder="Check In date">
+                </li>
+
+                <li>
+                    <label>Check Out</label>
+                    <input type="date" placeholder="Check Out Date">
+                </li>
+                <li>
+                    <button>Search</button>
+                </li>
+
+            </ul>
+        </form>
+    </div>
 </body>
 </html>
 
-<!--css styling
+<!--***css styling
 inline styling
 inpage styling/internal
 external styling
